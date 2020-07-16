@@ -1,0 +1,10 @@
+pl/camp/it/services/CategoryServices.class
+pl/camp/it/session/SessionFactory.class
+pl/camp/it/model/Product.class
+pl/camp/it/gui/GUI.class
+pl/camp/it/model/Category.class
+pl/camp/it/dao/ProductDAO.class
+pl/camp/it/services/ProductServices.class
+pl/camp/it/App.class
+pl/camp/it/dao/CategoryDAO.class
+pl/camp/it/model/User.class
