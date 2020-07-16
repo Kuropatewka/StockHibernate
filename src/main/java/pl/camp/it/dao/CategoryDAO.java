@@ -24,5 +24,22 @@ public class CategoryDAO {
             session.close();
         }
     }
+
+    public static void deleteCategoryFromDatabase(Category category) {
+        Session session = SessionFactory.sessionFactory.openSession();
+        Transaction tx = null;
+        try {
+            tx = session.beginTransaction();
+            session.delete(category);
+            tx.commit();
+        } catch (Exception e) {
+            if (tx != null) {
+                tx.rollback();
+            }
+        } finally {
+            session.close();
+        }
+    }
+
 }
 

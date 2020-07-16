@@ -4,6 +4,7 @@
 /home/piotr/IdeaProjects/Stock-Hibernate/src/main/java/pl/camp/it/model/Product.java
 /home/piotr/IdeaProjects/Stock-Hibernate/src/main/java/pl/camp/it/dao/ProductDAO.java
 /home/piotr/IdeaProjects/Stock-Hibernate/src/main/java/pl/camp/it/services/ProductServices.java
+/home/piotr/IdeaProjects/Stock-Hibernate/src/main/java/pl/camp/it/gui/GUIMethods.java
 /home/piotr/IdeaProjects/Stock-Hibernate/src/main/java/pl/camp/it/model/Category.java
 /home/piotr/IdeaProjects/Stock-Hibernate/src/main/java/pl/camp/it/gui/GUI.java
 /home/piotr/IdeaProjects/Stock-Hibernate/src/main/java/pl/camp/it/dao/CategoryDAO.java

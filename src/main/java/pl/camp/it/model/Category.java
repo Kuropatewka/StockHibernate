@@ -9,7 +9,7 @@ public class Category {
     private int id;
     @Column(nullable = false)
     private String categoryName;
-    private boolean exist;
+    private boolean deleted;
 
     public int getId() {
         return id;
@@ -27,12 +27,12 @@ public class Category {
         this.categoryName = categoryName;
     }
 
-    public boolean isExist() {
-        return exist;
+    public boolean isDeleted() {
+        return deleted;
     }
 
-    public void setExist(boolean exist) {
-        this.exist = exist;
+    public void setDeleted(boolean exist) {
+        this.deleted = deleted;
     }
 
     @Override
@@ -40,7 +40,7 @@ public class Category {
         return "Category{" +
                 "id=" + id +
                 ", categoryName='" + categoryName + '\'' +
-                ", exist=" + exist +
+                ", exist=" + deleted +
                 '}';
     }
 }

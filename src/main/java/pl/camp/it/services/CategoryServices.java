@@ -8,7 +8,7 @@ public class CategoryServices {
     public static void generateAndSaveCategory(String categoryName) {
         Category category = new Category();
         category.setCategoryName(categoryName);
-        category.setExist(false);
+        category.setDeleted(false);
 
         CategoryDAO.saveCategoryToDatabase(category);
     }

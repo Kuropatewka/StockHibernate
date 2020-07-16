@@ -14,7 +14,7 @@ public class ProductServices {
 
         Category category = new Category();
         category.setCategoryName(categoryName);
-        category.setExist(false);
+        category.setDeleted(false);
 
         product.setCategory(category);
 

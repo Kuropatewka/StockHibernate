@@ -1,4 +1,5 @@
 pl/camp/it/services/CategoryServices.class
+pl/camp/it/gui/GUIMethods.class
 pl/camp/it/session/SessionFactory.class
 pl/camp/it/model/Product.class
 pl/camp/it/gui/GUI.class
