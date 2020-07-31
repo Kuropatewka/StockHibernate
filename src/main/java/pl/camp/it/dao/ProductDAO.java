@@ -31,7 +31,7 @@ public class ProductDAO implements IProductDAO{
     @Override
     public List<Product> getAllProductsFromDatabase() {
         Session session = SessionFactory.sessionFactory.openSession();
-        Query<Product> query = session.createQuery("FROM pl.camp.it.Product");
+        Query<Product> query = session.createQuery("FROM pl.camp.it.model.Product");
         List<Product> result = query.getResultList();
         session.close();
         return result;
@@ -40,7 +40,8 @@ public class ProductDAO implements IProductDAO{
     @Override
     public List<Product> getProductByCategoryFromDatabase(int id) {
         Session session = SessionFactory.sessionFactory.openSession();
-        Query<Product> query = session.createQuery("FROM pl.camp.it.Product WHERE cateogry_id = :id");
+        Query<Product> query = session.createQuery("FROM pl.camp.it.model.Product WHERE category_id = :id");
+        query.setParameter("id", id);
         List<Product> result = query.getResultList();
         session.close();
         return result;

@@ -7,8 +7,9 @@ public class Category {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    @Column(nullable = false, unique = true)
+    private String name;
     @Column(nullable = false)
-    private String categoryName;
     private boolean deleted;
 
     public int getId() {
@@ -19,12 +20,12 @@ public class Category {
         this.id = id;
     }
 
-    public String getCategoryName() {
-        return categoryName;
+    public String getName() {
+        return name;
     }
 
-    public void setCategoryName(String categoryName) {
-        this.categoryName = categoryName;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public boolean isDeleted() {
@@ -38,8 +39,8 @@ public class Category {
     @Override
     public String toString() {
         return "Category{" +
-                "id=" + id +
-                ", categoryName='" + categoryName + '\'' +
+                "id= " + id +
+                ", name= '" + name + '\'' +
                 '}';
     }
 }

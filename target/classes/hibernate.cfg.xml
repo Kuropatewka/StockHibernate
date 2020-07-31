@@ -27,10 +27,11 @@
         </property>
 
         <property name="show_sql">true</property>
-        <property name="hbm2ddl.auto">create</property>
+        <property name="hbm2ddl.auto">update</property>
 
         <mapping class="pl.camp.it.model.Product"/>
         <mapping class="pl.camp.it.model.Category"/>
+        <mapping class="pl.camp.it.model.User"/>
 
     </session-factory>
 </hibernate-configuration>
