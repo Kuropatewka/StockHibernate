@@ -9,10 +9,13 @@ public class Product {
     private int id;
     @Column(nullable = false)
     private String name;
+    @Column(nullable = false)
     private int amount;
-    @Column(unique = true, nullable = false)
+    @Column(nullable = false)
+    private double price;
+    @Column(nullable = false, unique = true)
     private long barcode;
-    @ManyToOne(cascade = CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.ALL)
     private Category category;
 
     public int getId() {
@@ -55,12 +58,21 @@ public class Product {
         this.category = category;
     }
 
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
     @Override
     public String toString() {
         return "Product{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", amount=" + amount +
+                ", price=" + price +
                 ", barcode=" + barcode +
                 ", category=" + category +
                 '}';

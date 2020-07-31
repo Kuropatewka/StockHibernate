@@ -40,7 +40,6 @@ public class Category {
         return "Category{" +
                 "id=" + id +
                 ", categoryName='" + categoryName + '\'' +
-                ", exist=" + deleted +
                 '}';
     }
 }
